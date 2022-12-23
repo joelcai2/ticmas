@@ -60,6 +60,7 @@ var suma = Sumar(3,4)
 console.log(suma);
 */
 
+/*
 let nombre;
 nombre = "hola";
 console.log(nombre);
@@ -71,3 +72,5 @@ hola = "uno";
 console.log(hola);
 hola = 4;
 console.log(hola);
+*/
+
