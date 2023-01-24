@@ -2,8 +2,7 @@
 
 /* Cambio de Color */
 
-document.getElementById('inicio').addEventListener ('click',
-function ()
+function colorBaige ()
 {
    document.body.style.backgroundColor = '#FFFDD0';
    document.getElementsByClassName('mainn')[0].style.backgroundColor='#FFFDD0';
@@ -11,28 +10,36 @@ function ()
    document.getElementById('perfil').style.backgroundColor='#FFFDD0';
    document.getElementsByClassName('barraEspaciadora')[0].style.backgroundColor='#FFFDD0';
    document.getElementsByClassName('botonTrabajo')[0].style.backgroundColor='#FFFDD0';
+
+}
+
+function colorBlanco ()
+{
+   document.body.style.backgroundColor = '#FFFFFF';
+   document.getElementsByClassName('mainn')[0].style.backgroundColor='#FFFFFF';
+   document.getElementsByClassName('asidee')[0].style.backgroundColor='#FFFFFF';
+   document.getElementById('perfil').style.backgroundColor='#FFFFFF';
+   document.getElementsByClassName('barraEspaciadora')[0].style.backgroundColor='#FFFFFF';
+   document.getElementsByClassName('botonTrabajo')[0].style.backgroundColor='#FFFFFF';
+
+}
+
+document.getElementById('inicio').addEventListener ('click',
+function ()
+{
+   colorBaige();
 });
 
 document.getElementById('nosotros').addEventListener ('click',
 function ()
 {
-   document.body.style.backgroundColor = '#ffffff';
-   document.getElementsByClassName('mainn')[0].style.backgroundColor='#ffffff';
-   document.getElementsByClassName('asidee')[0].style.backgroundColor='#ffffff';
-   document.getElementById('perfil').style.backgroundColor='#ffffff';
-   document.getElementsByClassName('barraEspaciadora')[0].style.backgroundColor='#ffffff';
-   document.getElementsByClassName('botonTrabajo')[0].style.backgroundColor='#ffffff';
+   colorBlanco();
 });
 
 document.getElementById('contacto').addEventListener ('click',
 function ()
 {
-   document.body.style.backgroundColor = '#FFFDD0';
-   document.getElementsByClassName('mainn')[0].style.backgroundColor='#FFFDD0';
-   document.getElementsByClassName('asidee')[0].style.backgroundColor='#FFFDD0';
-   document.getElementById('perfil').style.backgroundColor='#FFFDD0';
-   document.getElementsByClassName('barraEspaciadora')[0].style.backgroundColor='#FFFDD0';
-   document.getElementsByClassName('botonTrabajo')[0].style.backgroundColor='#FFFDD0';
+   colorBaige();
 });
 
 /* Para ver un Href de un objeto del DOM de forma panorármica usar window.location.href */
