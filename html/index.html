@@ -1,83 +1,352 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- OJOOOOOOOO  : CAMBIAR las href por tus carpetas locales-->
     <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Proyecto" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
-        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
-        <meta property="og:description" content="Contenido del Sitio" />
-        <link rel="icon" type="image/x-icon" href="C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\Recursos\mesa.jpg">
-        
-        <link rel="stylesheet" type = "text/css" href = "C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\CSS\estilo.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Permite que las etiquetas sean predefinidas con un contenido específico y no aleatorio
+            para ser compartida en Redes Sociales-->
 
-        <title>Document</title>
-    </head>
-<body>
-    <img src="C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\Recursos\mesa.jpg"
-         alt="hola">
-        
-    <form action="" method="post">
-        <label>Nombre</label>
-        <input type="text" name="nombre" placeholder="Ingrese su Nombre" required>
-        <label>Apellido</label>
-        <input type="text" name="apellido" placeholder="Ingrese su Apellido" required>
-        <label>Nombre</label>
-        <input type="email" name="email" placeholder="Ingrese su email" required>
-        <input type="submit" value="Enviar">
-    </form>
+    <!-- Le dice al servidor la temática de la página-->     
+    <meta property="og:title" content="Proyecto Final Ticmas" />
+    <!-- Le dice al servidor en que consiste su contenido-->
+    <meta property="og:type" content="article" />
 
-    <video width="320" height="240" controls>
-        <source src="C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\Recursos\Stunner.mov" type="video/mp4">
-        <source src="C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\Recursos\Stunner.mov" type="video/ogg">
-        Tu navegador no soporta el video. Utilice otro navegador.
-    </video>
+    <!-- Al no tener un servidor con mi propio contenido uso uno al azar-->
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
 
-    <audio controls>
-    <source src="C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\Recursos\feeling so well.wav" type="audio/wav">
-    </audio>  
+    <!-- No debe superar los 155 caracteres-->
+    <meta property="og:description" content="Contenido del Sitio" />
+
+    <link rel="icon" type="image/x-icon" href="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\trabajoIcono.png"/>
     
-    <iframe width="420" height="315"
-    src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
+    <link rel="stylesheet" type = "text/css" href = "C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\CSS\contenedorGrid.css"/>
+    <link rel="stylesheet" type = "text/css" href = "C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\CSS\header.css"/>
+    <link rel="stylesheet" type = "text/css" href = "C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\CSS\main.css"/>
+    <link rel="stylesheet" type = "text/css" href = "C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\CSS\aside.css"/>
+    <link rel="stylesheet" type = "text/css" href = "C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\CSS\footer.css"/>
 
-    <p id="parrafoUno">Parrafo Original</p>
-    <button type="button" id="botonCambioTexto">
-        Click para cambiar texto
-    </button>
-    <button type="button" id="botonCambioColor">
-        Click para cambiar color
-    </button>
-    <button type="button" id="botonRestablecerColor">
-        Click para restablecer color
-    </button>
 
-    <p class="parrafoVerde">Texto Resaltado en Verde</p>
-    <p class="parrafoNegro">Texto No Resaltado</p>
-    <p class="parrafoVerde">Texto Resaltado en Verde</p>
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    -->
+     
+   
 
-    <form>
-        <label>Ingrese el primer número 
-            <input type="number" id="numeroUno" required> 
-        </label>
-        <label>Ingrese el segundo número 
-            <input type="number" id="numeroDos" required> 
-        </label>
-        <button type="button" id="suma">Realizar Suma</button>
-    </form>
+    <title>Proyecto Final Ticmas</title>
+</head>
+<body>
 
-    <div id="contenedorResultado">
-        El resultado de la Suma es
-        <p id="resultadoSuma"></p>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\iconoBlanco.png" alt="Trabajo Icono"></a>
+            </div>
+            <div id="nombreOrganizacion">
+                <button id="botonUsuario">Link Cv</button>
+            </div>
+            <div id="separadorMenu"></div>
+            <nav class="menu">
+                <div id="menuCheck">
+                    <div id="menuCheckBox">
+                        <div class="checkBtn">
+                            <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\sandwichBlanco.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menuEnlaces">
+                    <div class="botonCierreMenu">
+                        <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\xBlanca.png" alt="">
+                    </div>
+                    <ul class="enlaces">
+                        <li ><a href="#" id="inicio">Inicio</a></li>
+                        <li ><a href="#" id="nosotros">Nosotros</a></li>
+                        <li ><a href="#" id="contacto">Contacto</a></li>
+                    </ul>
+                </div>
+             </nav>
+        </header>
+        <main class="mainn">
+            <section class="section">
+                <article class="articulo">
+                    <div id="perfil">
+                        <div id="fotoPerfil">
+                            <div id="foto">
+                                <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\tom.jpg" id="fotoUsuario" alt="Ocurrio un evento no esperado">
+                            </div>
+                        </div>
+                        <div id="datosPerfil">
+                            <div id="datosPersona">
+                                <div class="iconoTrabajo">
+                                    <div >
+                                       <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\personaCeleste.png" alt="iconoNombre">
+                                    </div>
+                                    <div>
+                                        <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\mailCeleste.png" alt="iconoCorreo">
+                                    </div>
+                                    <div>
+                                        <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\edadCeleste.png" alt="iconoEdad">
+                                    </div>
+                                    <div>
+                                        <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\direccionCeleste.png" alt="iconoDireccion">
+                                    </div>
+                                    <div>
+                                        <img src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\movilCeleste.png" alt="iconoTelefono">
+                                    </div>   
+                                </div>
+                                <div class="atributo">
+                                    <div>Nombre:</div>
+                                    <div>Correo:</div>
+                                    <div>Edad:</div>
+                                    <div>Dirección:</div>
+                                    <div>Telefono:</div>
+                                </div>
+                                
+                                <div id="datos">
+                                    <div>
+                                        <div id="nombre">Juan Perez</div>
+                                    </div>
+                                    <div>
+                                        <div id="correo">correo@linkcv.com</div>
+                                    </div>
+                                    <div>
+                                        <div id="edad">37 años</div>
+                                    </div>
+                                    <div>
+                                        <div id="direccion">Avenida 123 sd</div>
+                                    </div>
+                                    <div>
+                                        <div id="telefono">111558*598</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="barraEspaciadora">
+                    <div id="barra">
+                    </div>
+                </div>
+                <div class="botonTrabajo">
+                    <div class="botonLinkCv">
+                        <div class="perfilSkill">
+                            <button type="button" id="acercaDe">
+                                Acerca De
+                            </button>
+                            <button type="button" id="actividad">
+                                Actividad
+                            </button>
+                            <button type="button" id="experiencia">
+                                Experiencia
+                            </button>
+                            <button type="button" id="estudio">
+                                Estudios
+                            </button>
+                            <button type="button" id="conocimiento">
+                                Conocimientos
+                            </button>
+                            <button type="button" id="recomendacion">
+                                Recomendaciones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="principal">
+                    <div class="bloquePrincipal">
+                        <div class="secciones">
+                            <div class="bloqueAcercaDe">
+                                <div id="primerBloqueAcerca">
+                                </div>
+                                <div id="segundoBloqueAcerca">
+                                    Acerca de<br>
+                                    MI<br><br>
+                                    
+                                    AUMENTAMOS EL BIENESTAR LABORAL DENTRO DE LAS EMPRESAS<br><br>
+                                    
+                                    👉Ayudamos a empresas con la transformación de su cultura organizacional.<br>
+                                    👉Ayudamos a empresas a combinar talentos para generar equipos de alto rendimiento.<br>
+                                    👉Ayudamos a empresas con la construcción de su propósito.<br>
+                                    👉Entrenamiento de management.<br>
+                                    👉Gestión de estrés para directivos.<br>
+                                    👉Ayudamos a empresas con programas de Outplacement.<br>
+                                    👉Ayudamos a Universidades preparando a sus estudiantes para dar el salto al mercado laboral.<br>
+                                </div>
+                                <div id="tercerBloqueAcerca">
+                                </div>
+                            </div>
+                            <div class="bloqueActividad">
+                                <div id="primerBloqueActividad">
+                                </div>
+                                <div id="segundoBloqueActividad">
+                                    Actividad<br>
+                                    <em>567 Seguidores</em><br><br>
+                                    
+                                    Última actividad registrada<br><br>
+                                    
+                                    No hay publicaciones recientes. 
+                                </div>
+                                <div id="tercerBloqueActividad">
+                                </div>
+                            </div>
+                            <div class="bloqueExperiencia">
+                                <div id="primerBloqueExperiencia">
+                                    CEO<br>
+                                    Empresa 1<br>
+                                    <em>oct. 2020 - actualidad · 2 años 4 meses</em> 
+                                </div>
+                                <div id="separadorExperienciaUno">
+                                </div>
+                                <div id="segundoBloqueExperiencia">
+                                    Gerente<br>
+                                    Empresa 2<br>
+                                    <em>ene. 2015 - oct. 2020 · 5 años 4 meses</em>  
+                                </div>
+                                <div id="separadorExperienciaUno">
+                                </div>
+                                <div id="tercerBloqueExperiencia">
+                                    Coordinador<br>
+                                    Empresa 3<br>
+                                    <em>sep. 2013 - ene. 2015 · 2 años 4 meses</em> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="asidee">
+            <div class = "asideUno">
+                <div class="presentacionAudioVideo">
+                    <div id="presentacionVideo">
+                        Presentación en Video
+                    </div>
+                    <div id="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds8lRXWfoPE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                    <div id="presentacionAudio">
+                        Presentación en Audio
+                    </div>
+                    <div id="audio">
+                            <audio controls>
+                                <source src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\audioCv.ogg" type="audio/ogg">
+                            </audio>  
+                    </div>
+                </div>
+            </div>
+            <div class = "asideDos">
+                <div id="presentacionPublicidad"> 
+                    <div id="tituloPublicidadUno">Publicidad
+                    </div>
+                    <div id="publicidadUno">
+                    </div>
+                </div>
+            </div>
+            <div class = "asideTres">
+                <div id="presentacionPublicidadDos"> 
+                    <div id="publicidadDos">
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <footer class="footerr">
+                <div class="footerrSeparadorUno">
+                    <div class="footerUno">
+                        <div id="contactame">Contáctame</div>
+                        <div id="formm">
+                            <form id="formValidacion" action="" method="post">
+                                <label>Nombre <i>(Ejem: Juan Pedro)</i></label>
+                                <input type="text" id="nombrePersona" 
+                                    name="nombre" placeholder="Ingrese su Nombre" required>
+                                <img id ="checkInputNombre" src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Recursos\checkValidacion.png" alt="ocurrio un error en el navegador">
+                                <div id="errorNombre">Ingrese su nombre sin espacios ni al inicio, ni al final</div>
+                                <div id="errorNombreLength">No puede exceder los 8 caracteres</div>
+
+                                <label>Apellido</label>
+                                <input type="text" id="apellidoPersona"
+                                    name="apellido" placeholder="Ingrese su Apellido" required>
+                                <div id="errorApellido"></div>  
+                                
+                                <label>Organización</label>
+                                <input type="text" id="organizacionPersona"
+                                    name="organizacion" placeholder="Ingrese su Organización" required>    
+                                <div id="errorOrganizacion"></div> 
+
+                                <label>E-mail</label>
+                                <input type="email" id="emailPersona"
+                                    name="email" placeholder="Ingrese su email" required>
+                                <div id="errorEmail"></div> 
+
+                                <label>Mensaje</label>
+                                <textarea type="" id="mensajePersona"
+                                name="mensaje" placeholder="Ingrese su Mensaje" required></textarea>
+                                <div id="errorMensaje"></div> 
+                                <!-- Código Captcha html
+                                <div>
+                                    <button class="g-recaptcha" 
+                                    data-sitekey="reCAPTCHA_site_key" 
+                                    data-callback='onSubmit' 
+                                    data-action='submit'>Submit</button>
+                                </div>
+                                -->
+                                <input id="enviarFormulario" type="submit" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footerDos">
+                        <div id="footerDosPrimero">
+                        Ubicación:<br>
+                        <em>Av. Córdoba con Pueyrredon</em><br>
+                        Teléfono: 
+                        <em>11584%45#4</em>
+                        </div>
+                        <div id="footerDosSegundo">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2344102556413!2d-58.406025184900926!3d-34.598233564714754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca918559e3ab%3A0xecd06364de6ba42c!2sPueyrredon%20Y%20C%C3%B3rdoba!5e0!3m2!1ses!2spe!4v1673718878863!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div id="footerDosTercero">Enlaces
+                        </div>
+                        <div id="footerDosCuarto">
+                            <div id ="enlaceFooterUno">
+                                <ul>
+                                    <li ><a href="" >Quienes Somos</a></li>
+                                    <li ><a href="" >Centro de Ayuda</a></li>
+                                    <li ><a href="" >Preguntas Frecuentes</a></li>
+                                </ul>
+                            </div>
+                            <div id="enlaceFooterDos">
+                                <ul class="listaFooterDos">
+                                    <li ><a href="" >Política de Privacidad</a></li>
+                                    <li ><a href="" >Términos y Condiciones</a></li>
+                                    <li ><a href="" >Trabaja con nosotros</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="footerTres">
+
+                    </div>
+                </div>
+                <div class="footerrSeparadorDos">
+
+                </div>
+            
+          
+        </footer>
     </div>
 
-    <script src="C:\Users\TOSHIBA\Desktop\Argentina Programa\Ticmas\Js\javascript.js"></script> 
-
+    <!-- Los Elementos Script se usan aqui en el body porque tienen que cargar todos los elementos en 
+         el navegador primeramente-->
+         
+    <!-- Re Captcha
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    -->
+    <script src="C:\Users\TOSHIBA\Desktop\TicmasProyectoFinal\Js\javascript.js"></script>
+    
 </body>
 </html>

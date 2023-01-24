@@ -1,0 +1,32 @@
+*
+{
+    box-sizing: border-box;
+    /* Si desea el usuario activar esto tendra que modificar el size.
+    font-family: 'Poppins';
+    font-size: 20px;
+    */
+    
+}
+
+.contenedor
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: (3,auto) ;
+    grid-gap: 20px;
+    
+}
+
+@media screen and (max-width:600px)
+
+{
+    .contenedor 
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: (4,auto) ;
+        grid-gap: 20px;
+    }
+   
+}
+

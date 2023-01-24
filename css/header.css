@@ -1,0 +1,506 @@
+
+header
+{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.contenedor .header
+{
+    background-color: #0F52BA;
+    color:  white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-row: auto;
+    height: 60px;
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    justify-content: space-evenly;
+    
+    
+}
+.contenedor .header .logo
+{
+    background-color: #0F52BA;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.contenedor .header .logo img
+{
+    width: 40px;
+    height: 40px;
+}
+#nombreOrganizacion
+{
+    background-color: #0F52BA;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start ;
+    overflow: hidden;
+    font-size: 20px;
+}
+#separadorMenu
+{
+    width: 10%;
+    background-color: #0F52BA;
+}
+
+.contenedor .header .menu
+{
+     
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    background-color: #0F52BA;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+#menuCheck
+{
+    width: 10%;
+    background-color: #0F52BA; 
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    display: none;
+}
+.checkBtn img
+{
+    width: 35px;
+    height: 35px;
+}
+.menuEnlaces
+{
+    width: 80%;
+    background-color: #0F52BA; 
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: flex-end;   
+}
+.botonCierreMenu
+{
+    background-color: #0F52BA;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    display: none;
+}
+.botonCierreMenu img
+{
+    width: 40px;
+    height: 40px;
+    
+}
+.contenedor .header .menu .enlaces
+{
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #0F52BA;
+    align-content: center;
+    justify-content: space-evenly;
+    
+    font-size: 20px;
+}
+.contenedor .header .menu .enlaces li 
+{
+    list-style: none;
+}    
+.contenedor .header .menu .enlaces li a
+{
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    
+    
+}
+.contenedor .header .menu .enlaces li a:hover
+{
+   
+    color: #ffffff;
+    opacity: 100%;
+    transition: 0.4s;
+    text-decoration: underline;
+    animation: derecha 0.2s linear 0s;;
+}
+
+@media screen and (max-width:992px)
+{
+    .contenedor .header .logo
+    {
+        width: 10%;
+    }
+    .contenedor .header .logo img
+    {
+        width: 30px;
+        height: 30px;
+    }
+    #nombreOrganizacion
+    {
+        width: 10%;
+        font-size: 20px;
+        justify-content: flex-start;
+    }
+    #separadorMenu
+    {
+        width: 0%;
+    }
+    .contenedor .header .menu
+    {
+        width: 80%;
+    }
+    #menuCheck
+    {
+        width: 0%;
+        display: none;
+    }
+    .menuEnlaces
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:650px)
+{
+    
+
+   
+    .contenedor .header .logo
+    {
+        width: 10%;
+    }
+    .logo img
+    {
+        position: absolute;
+        left: 8.5%;
+        top: 22%;
+    }
+
+    #nombreOrganizacion
+    {
+        position: absolute;
+        width: 25%;
+        
+        right: 30.1%;
+        top:34%;
+        
+    }
+    #separadorMenu
+    {
+        width: 0%;
+        
+    }
+    .contenedor .header .menu
+    {
+        width: 60%;
+    }
+ 
+
+   
+    #menuCheck
+    {
+        width: 15%;
+        display: block;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: space-evenly; 
+    }
+    #menuCheckBox
+    {
+
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: space-evenly; 
+    }
+   
+    .checkBtn
+    {
+        position: absolute;
+        width: 40%;
+        right: -26% ;
+        top: 20.5%;
+        cursor: pointer;
+
+    }
+    .menu
+    {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:center; 
+        align-content: center;
+        
+       
+    }
+    
+    .contenedor .header .menu .menuEnlaces 
+    {
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+          
+        top: -10px;
+        left: -200%;
+        right: -50%;
+        background-color: #0F52BA; 
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:center; 
+        align-content: center;
+        transition: 0.4s;
+        
+    }
+    .botonCierreMenu
+    {
+        width: 10%;
+        height: 15%;
+        display: block;
+        position: absolute;
+        left: 84.8%;
+        bottom: 75%;
+        background-color: #0F52BA;
+        
+
+    }
+    .botonCierreMenu img 
+    {
+        width: 35px;
+        height: 35px;
+
+    }
+    .contenedor .header .menu .enlaces
+    {
+        width: 50%;
+        height: 70%;
+        text-align: center;
+        background-color: #0080FE;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content:space-evenly; 
+        align-content: center;
+        border-radius: 20px;
+        
+        
+        
+    }
+
+    .contenedor .header .menu .enlaces li a
+    {
+        font-size: 28px;
+        opacity: 100%;
+        margin-left: -37%;
+        
+        
+    }
+    .contenedor .header .menu .enlaces li a:hover
+    {
+        animation: none;
+        text-decoration: none;
+        opacity: 100%;
+    } 
+ 
+}
+@media screen and (max-width:550px)
+{
+
+   
+    .logo img
+    {
+        left: 8%;
+    }
+    #nombreOrganizacion
+    {
+        right: 30.8%;
+    }
+
+    .botonCierreMenu
+    {
+     
+        left: 84.5%;
+ 
+    }
+
+    .contenedor .header .menu .enlaces li a
+    {
+        margin-left: -35%;
+        font-size: 28px;
+         
+    }
+
+
+}
+@media screen and (max-width:500px)
+{
+    .logo img
+    {
+        left: 7.5%;
+    }
+    #nombreOrganizacion
+    {
+        right: 31.5%;
+    }
+    
+    .checkBtn
+    {
+        position: absolute;
+        width: 40%;
+        right: -25% ;
+        top: 20%;
+        cursor: pointer;
+
+    }
+   
+    .botonCierreMenu
+    {
+     
+        left: 83%;
+ 
+    }
+    
+
+    .contenedor .header .menu .enlaces li a
+    {
+        margin-left: -40%;
+        font-size: 25px;
+         
+    }
+
+}
+@media screen and (max-width:450px)
+{
+    .logo img
+    {
+        left: 7%;
+    }
+    #nombreOrganizacion
+    {
+        right: 32.3%;
+    }
+    
+    .checkBtn
+    {
+        position: absolute;
+        width: 40%;
+        right: -25% ;
+        top: 20%;
+        cursor: pointer;
+
+    }
+   
+    .botonCierreMenu
+    {
+     
+        left: 83%;
+ 
+    }
+    
+
+    .contenedor .header .menu .enlaces li a
+    {
+        margin-left: -48%;
+        font-size: 23px;
+         
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .logo img
+    {
+        left: 6%;
+    }
+    #nombreOrganizacion
+    {
+        right: 33%;
+    }
+    
+    .checkBtn
+    {
+        position: absolute;
+        width: 40%;
+        right: -24.8% ;
+        top: 20%;
+        cursor: pointer;
+
+    }
+    .botonCierreMenu
+    {
+     
+        left: 83.7%;
+ 
+    }
+    .botonCierreMenu img
+    {
+        width: 30px;
+        height: 30px;
+    }
+       
+
+    .contenedor .header .menu .enlaces li a
+    {
+        margin-left: -45%;
+        font-size: 23px;
+         
+    }
+}
+@media screen and (max-width:300px)
+{
+    .logo img
+    {
+        left: 4%;
+    }
+    #nombreOrganizacion
+    {
+        right: 35.7%;
+    }
+    
+    .checkBtn
+    {
+        position: absolute;
+        width: 40%;
+        right: -23.8%;
+        top: 20%;
+        cursor: pointer;
+
+    }
+    .botonCierreMenu
+    {
+     
+        left: 83.2%;
+ 
+    }
+    .botonCierreMenu img
+    {
+        width: 30px;
+        height: 30px;
+    }
+       
+
+    .contenedor .header .menu .enlaces li a
+    {
+        margin-left: -45%;
+        font-size: 23px;
+         
+    }
+
+}
+
+

@@ -1,0 +1,723 @@
+
+
+.contenedor .mainn
+{
+    background-color: white;
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end:3 ;
+    height: 1500px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    
+}
+.contenedor .mainn .section
+{
+    width: 100%;
+}
+.contenedor .mainn .section .article
+{
+    width: 100%;
+}   
+#perfil
+{
+    
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    
+
+}
+#fotoPerfil
+{
+    background-image: url("C:/Users/TOSHIBA/Desktop/TicmasProyectoFinal/Recursos/trabajoOficina.jpg");
+    background-size: cover;
+    
+    border-radius: 20px;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foto
+{   
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    
+    
+}
+#foto img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+#datosPerfil
+{
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+
+#datosPersona
+{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.iconoTrabajo
+{
+    
+    height: 80%;
+    width: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    animation: derecha 2.2s linear 0s;
+    
+}
+@keyframes derecha
+{
+    0%
+    {
+        transform: translateX(-180%) scaleX(0);
+        opacity: 20%;
+    }
+    50%
+    {
+        transform: translateX(-10%) scaleX(0);
+        opacity: 0%;
+    }
+    100%
+    {
+        margin-left: 0%;
+
+    }
+}
+.iconoTrabajo img
+{
+    
+    width: 95%;
+    height: 95%;
+    
+}
+.atributo
+{
+    
+    height: 80%;
+    width: 25%;
+    font-size: 23px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: #00CB85;
+
+}
+
+#datos
+{
+    
+    height: 80%;
+    width: 55%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 23px;
+
+}
+.barraEspaciadora
+{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+#barra
+{
+    width: 90%;
+    height: 5px;
+    background-color: #00CB85;
+    border-radius: 20px;
+    margin-top: 20px;
+    animation: barra 2s linear 0s;
+}
+@keyframes barra
+{
+    0%
+    {
+        width: 0%;
+    }
+    50%
+    {
+        width: 60%;
+    }
+    100%
+    {
+        width: 90%;
+
+    }
+}
+.botonTrabajo
+{
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+   
+}
+.botonLinkCv
+{
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+}
+.perfilSkill
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.perfilSkill button
+{
+    width: auto;
+    cursor: pointer;
+    color: white;
+    background-color: #0F52BA;
+    padding: 10px;
+    display: inline-block;
+    align-items: center; 
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #0F52BA;
+}
+.perfilSkill button:hover
+{
+    background-color: #06F727;
+    border-color: #06F727;
+    color: black;
+
+}
+.perfilSkill button:active
+{
+    width:auto;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.principal
+{
+    width: 100%;
+    background-color: #00CB85;
+    height: 1100px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; 
+    
+   
+}
+.bloquePrincipal
+{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.secciones
+{
+    width: 100%;
+    height: 100%;
+    background-color: #FFE4E1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    border-radius: 20px;
+}
+.bloqueAcercaDe
+{
+    width: 90%;
+    height: 350px;
+    background-color: white;
+    border-radius: 30px;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center; 
+    
+    
+}
+
+#primerBloqueAcerca
+{
+    width: 10%;
+}
+#segundoBloqueAcerca
+{
+    width: 80%;
+    animation: aparecerDerecha 1.5s linear 0s;
+    display: none;
+    
+}
+#tercerBloqueAcerca
+{
+    width: 10%;
+}
+
+.bloqueActividad
+{
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    border-radius: 30px;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center; 
+    
+    
+}
+#segundoBloqueActividad
+{
+    width: 80%;
+    animation: aparecerDerecha 1.5s linear 0s;
+    display: none;
+    
+}
+.bloqueExperiencia
+{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#primerBloqueExperiencia
+{
+    width: 90%;
+    height: 20%;
+    animation: aparecerDerecha 1.5s linear 0s;
+    display: none;
+}
+#separadorExperienciaUno
+{
+    width: 90%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: orange;
+    animation: aparecerDerecha 1.5s linear 0s;
+    
+}
+#segundoBloqueExperiencia 
+{
+    width: 90%;
+    height: 20%;
+    animation: aparecerDerecha 1.5s linear 0s;
+    display: none;
+    
+}
+#separadorExperienciaDos
+{
+    width: 90%;
+    height: 2%;
+    background-color: orange;
+    animation: aparecerDerecha 1.5s linear 0s;
+    
+}
+#tercerBloqueExperiencia
+{
+    width: 90%;
+    height: 20%;
+    animation: aparecerDerecha 1.5s linear 0s;
+    display: none;
+}
+
+@keyframes aparecerDerecha
+{
+    0%
+    {
+        opacity: 0%;
+        margin-left: -400px;
+    }
+    50%
+    {
+        opacity: 0%;
+        margin-left: -200px;
+    }
+    100%
+    {
+        opacity: 100%;
+        margin-left: 0px;
+
+    }
+}
+
+@media screen and (max-width:992px)
+{
+    .contenedor .mainn
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end:3 ;
+        width: 100%;
+        height: 1550px;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        
+
+    }
+   
+    .iconoTrabajo img
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .atributo
+    {
+        font-size: 20px;
+    }
+    #datos
+    {
+        font-size: 20px;
+    }
+    .principal
+    {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:850px)
+{
+    .atributo
+    {
+        font-size: 19px;
+    }
+    #datos
+    {
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (max-width:770px)
+{
+    .perfilSkill button 
+    {
+        padding: 8px;
+        font-size: 15px;
+    }
+    
+
+}
+
+@media screen and (max-width:700px)
+{
+    .perfilSkill button 
+    {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+
+}
+
+
+@media screen and (max-width:650px)
+
+{
+    .contenedor .mainn
+    {
+        
+        
+        height: 1800px;
+        display: flex;
+        
+        justify-content: flex-start;
+        align-content: flex-end;
+        background-color: #00B2EA;
+    }
+    
+    .mainn section
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+            
+    }
+    .mainn .section .articulo
+    {
+        width: 100%;
+        height: 30% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .mainn .section .barraEspaciadora
+    {
+        width: 100%;
+        height: 2% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .mainn .section .botonTrabajo
+    {
+        width: 100%;
+        height: 5% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .mainn .section .principal
+    {
+        width: 100%;
+        height: 55% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+   #perfil
+   {
+        width: 100%;
+        height: 100% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+   }
+   #fotoPerfil
+   {
+        width: 100%;
+        height: 50% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: center;
+        align-content: center;
+        
+   }
+   #fotoPerfil 
+   {
+        border-radius: 0px;
+   }
+   #datosPerfil
+   {
+        width: 100%;
+        height: 50% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+
+   }
+   #datosPersona
+   {
+        width: 100%;
+        height: 100% ;
+        display: flex;
+        flex-flow: row wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+        background-color: #FFFDD0;
+
+   } 
+   .iconoTrabajo
+   {
+        width: 10%;
+        height: 90% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        
+        
+   }
+   .iconoTrabajo img 
+   {
+        width: 30px;
+        height: 30px;
+   }
+   .atributo
+   {
+        width: 25%;
+        height: 90% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        font-size: 20px;
+        
+        
+
+   }
+   #datos
+   {
+        width: 60%;
+        height: 90% ;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        font-size: 20px;
+   }
+   #barra
+   {
+    margin-top: 0px;
+   }
+
+ 
+   .mainn .section .botonTrabajo .botonLinkCv .perfilSkill
+   {
+        width: 200%;
+        height: 90% ;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-content: center;
+        
+   }
+   #estudio
+   {
+    display: none;
+   }
+   #conocimiento
+   {
+    display: none;
+   }
+   #recomendacion
+   {
+    display: none;
+   }
+    #segundoBloqueAcerca
+    {
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media screen and (max-width:500px)
+{
+    .iconoTrabajo img 
+    {
+        width: 25px;
+        height: 25px;
+    }
+    .atributo
+    {
+        font-size: 18px; 
+    }
+    #datos
+    {
+        font-size: 18px;
+    }
+    #segundoBloqueAcerca
+    {
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width:400px)
+{
+    .iconoTrabajo img 
+    {
+        width: 23px;
+        height: 23px;
+    }
+    .atributo
+    {
+        font-size: 15px; 
+    }
+    #datos
+    {
+        font-size: 15px;
+    }
+    #segundoBloqueAcerca
+    {
+        font-size: 12px;
+    }
+    .perfilSkill button 
+    {
+        width: 28%;
+        height: 70%;
+        display: flex;
+        
+        justify-content: space-evenly;
+        align-content: center;
+        font-size: 12px;
+
+    }
+
+}

@@ -1,0 +1,669 @@
+
+
+.contenedor .footerr
+{
+    background-color: black;
+    
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+    height: 780px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.footerrSeparadorUno
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerUno
+{
+    width: 40%;
+    height: 90%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contactame
+{
+    width: 32%;
+    height: 8%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    color: white;
+}
+#formm
+{
+    width: 90%;
+    height: 80%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#formm form
+{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+#nombrePersona
+{
+    width: 90%;
+    
+    
+    
+}
+
+#apellidoPersona
+{
+    width: 90%;
+}
+#organizacionPersona
+{
+    width: 90%;
+}
+#emailPersona
+{
+    width: 90%;
+}
+#mensajePersona
+{
+    width: 90%;
+    height: 100px;
+    overflow: hidden;
+    text-align: justify;
+    word-wrap: break-word;
+}
+.footerDos
+{
+    width: 45%;
+    height: 90%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerDosPrimero
+{
+    width: 90%;
+    height: 18%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+#footerDosSegundo
+{
+    width: 90%;
+    height: 45%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#footerDosSegundo iframe
+{
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+    
+}
+#footerDosTercero
+{
+    width: 90%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+#footerDosCuarto
+{
+    width: 90%;
+    height: 25%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: flex-start ;
+}
+#enlaceFooterUno
+{
+    width: 40%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: flex-start;
+    
+}
+#enlaceFooterUno ul
+{
+    background-color: black ;
+    width: auto;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: center ;
+    align-content: flex-start ;
+}
+
+#enlaceFooterUno li
+{
+    width: 100%;
+
+    list-style: disc;
+    color: white;
+}
+#enlaceFooterUno li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+#enlaceFooterDos
+{
+    width: 45%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+#enlaceFooterDos ul
+{
+    background-color: black ;
+    width: auto;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: center ;
+    align-content: flex-start ;
+}
+
+#enlaceFooterDos li
+{
+    width: 100%;
+
+    list-style: disc;
+    color: white;
+}
+#enlaceFooterDos li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+.footerTres
+{
+    width: 0%;
+    height: 90%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerrSeparadorDos
+{
+    width: 90%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    
+}
+
+#errorNombre, #errorNombreLength
+{
+    display: none;
+    width: 100%;
+    font-size: 18px;
+    background-color: white;
+    color: red;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20 px;
+}
+
+
+#checkInputNombre
+{
+    display: none;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    margin-left: 360px;
+    margin-bottom: 353px;
+}
+
+@media screen and (max-width:1290px)
+{
+    #checkInputNombre
+    {
+        margin-left: 330px;
+    }
+    
+}
+@media screen and (max-width:1190px)
+{
+    #checkInputNombre
+    {
+        margin-left: 270px;
+        
+    }
+    
+}
+
+
+@media screen and (max-width:1050px)
+
+{
+    .contenedor .footerr
+    {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 5;
+            
+       
+        height: 1500px;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .footerrSeparadorUno
+    {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-flow: column wrap;
+        overflow: hidden;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .footerUno
+    {
+        width: 80%;
+        height: 50%;
+
+    }
+    #contactame
+    {
+        width: 30%;
+        height: 7%;
+    }
+    .footerDos
+    {
+        width: 70%;
+        height: 50%;
+
+    }
+    .footerTres
+    {
+        width: 100%;
+        height: 0%;
+
+    }
+   
+    #footerDosCuarto
+    {
+        width: 100%;
+       
+    }
+    .footerrSeparadorDos
+    {
+        width: 100%;
+        height: 3%;
+        text-align: center;
+    }
+    #checkInputNombre
+    {
+        margin-left: 530px;
+        margin-bottom: 396px;
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width:992px)
+{
+    .footerUno
+    {
+        width: 90%;
+       
+
+    }
+    .footerDos
+    {
+        width: 80%;
+       
+
+    }
+    #checkInputNombre
+    {
+        margin-left: 580px;
+        margin-bottom: 396px;
+    }
+ 
+
+}
+
+@media screen and (max-width:950px)
+{
+    #checkInputNombre
+    {
+        margin-left: 550px;
+        
+    }
+}
+@media screen and (max-width:900px)
+{
+    #checkInputNombre
+    {
+        margin-left: 515px;
+       
+    }
+}
+
+@media screen and (max-width:850px)
+{
+    #checkInputNombre
+    {
+        margin-left: 480px;
+       
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    #checkInputNombre
+    {
+        margin-left: 450px;
+       
+    }
+}
+@media screen and (max-width:750px)
+{
+    #checkInputNombre
+    {
+        margin-left: 415px;
+       
+    }
+}
+@media screen and (max-width:700px)
+{
+    #checkInputNombre
+    {
+        margin-left: 385px;
+       
+    }
+}
+@media screen and (max-width:650px)
+{
+    #checkInputNombre
+    {
+        margin-left: 350px;
+       
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    #checkInputNombre
+    {
+        margin-left: 325px;
+       
+    }
+}
+
+@media screen and (max-width:550px)
+{
+    #footerDosCuarto
+    {
+        width: 100%;
+        
+    }
+    #enlaceFooterUno li a
+    {
+        font-size: 18px;
+    }
+    #enlaceFooterDos li a
+    {
+        font-size: 18px;
+    }
+    #formValidacion label
+    {
+        font-size: 20px;
+    }
+    #checkInputNombre
+    {
+        margin-left: 290px;
+       
+    }
+ 
+}
+
+@media screen and (max-width:500px)
+{
+    
+
+    #contactame
+    {
+        width: 30%;
+        height: 7%;
+        font-size: 22px;
+    }
+
+   
+    #enlaceFooterUno li a
+    {
+        font-size: 15px;
+    }
+    #enlaceFooterDos li a
+    {
+        font-size: 15px;
+    }
+    .footerrSeparadorDos
+    {
+        font-size: 19px;
+        
+    }
+    #checkInputNombre
+    {
+        margin-left: 260px;
+       
+    }
+
+}
+@media screen and (max-width:450px)
+{
+    
+
+    #contactame
+    {
+        width: 35%;
+        height: 6%;
+        font-size: 20px;
+    }
+
+    #formValidacion label
+    {
+        font-size: 18px;
+    }
+    #errorNombre, #errorNombreLength
+    {
+        font-size: 18px;
+    }
+    #checkInputNombre
+    {
+        margin-left: 220px;
+        margin-bottom: 398px;
+    }
+
+}
+@media screen and (max-width:400px)
+{
+    
+
+    #contactame
+    {
+        width: 40%;
+        height: 6%;
+        font-size: 20px;
+    }
+
+    .footerrSeparadorDos
+    {
+        height: 4%;
+        font-size: 15px;
+        
+    }
+
+    #formValidacion label
+    {
+        font-size: 16px;
+    }
+    #errorNombre, #errorNombreLength
+    {
+        font-size: 16px;
+    }
+    #checkInputNombre
+    {
+        margin-left: 190px;
+        margin-bottom: 400px;
+    }
+}
+
+@media screen and (max-width:350px)
+{
+    
+
+    #contactame
+    {
+        width: 45%;
+        height: 6%;
+        font-size: 18px;
+    }
+
+   
+    #enlaceFooterUno li a
+    {
+        font-size: 14px;
+    }
+    #enlaceFooterDos li a
+    {
+        font-size: 14px;
+    }
+    .footerrSeparadorDos
+    {
+        
+        font-size: 17px;
+        
+    }
+    #formValidacion label
+    {
+        font-size: 15px;
+    }
+    #errorNombre, #errorNombreLength
+    {
+        font-size: 15px;
+    }
+    #checkInputNombre
+    {
+        margin-left: 160px;
+        margin-bottom: 402px;
+    }
+
+}
+@media screen and (max-width:290px)
+{
+    #footerDosCuarto
+    {
+        margin-left: -8%;
+    }
+    .footerrSeparadorDos
+    {
+        font-size: 17px;
+        
+    }
+    #formValidacion label
+    {
+        font-size: 14px;
+    }
+    #errorNombre, #errorNombreLength
+    {
+        font-size: 14px;
+    }
+    #checkInputNombre
+    {
+        margin-left: 135px;
+        margin-bottom: 402px;
+    }
+
+}
