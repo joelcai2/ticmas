@@ -109,6 +109,8 @@ function teclaLevantada (parametro)
    de todos los imputs esten trabajados*/
 var validarForm = false;
 
+document.getElementById('checkValidacionPersonaInput').style.display = 'none';
+
 function validarFormulario (evento)
 {
    
@@ -122,7 +124,7 @@ function validarFormulario (evento)
       case "nombre":
          if (nombreInputRegex.test(evento.target.value))
          {
-            document.getElementById('checkInputNombre').style.display = 'block';
+            document.getElementById('checkValidacionPersonaInput').style.display = 'block';
             document.getElementById('errorNombre').style.display = 'none';
             document.getElementById('errorNombreLength').style.display = 'none';
             document.getElementById('nombrePersona').style.border = '3px solid #06F727';
@@ -141,7 +143,7 @@ function validarFormulario (evento)
        
          else if (evento.target.value.length > 8)
          {
-            document.getElementById('checkInputNombre').style.display = 'none';
+            document.getElementById('checkValidacionPersonaInput').style.display = 'none';
             document.getElementById('errorNombre').style.display = 'none';
             document.getElementById('errorNombreLength').style.display = 'block';
             document.getElementById('nombrePersona').style.border = '3px solid red';
@@ -150,7 +152,7 @@ function validarFormulario (evento)
          }
          else
          {
-            document.getElementById('checkInputNombre').style.display = 'none';
+            document.getElementById('checkValidacionPersonaInput').style.display = 'none';
             document.getElementById('errorNombreLength').style.display = 'none';
             document.getElementById('errorNombre').style.display = 'block';
             document.getElementById('nombrePersona').style.border = '3px solid red';
