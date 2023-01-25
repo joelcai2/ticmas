@@ -430,6 +430,14 @@
 
 }
 
+@media screen and (max-width:600px)
+{
+    #contactame
+    {
+        width: 35%;
+        height: 7%;
+    }
+}
 
 @media screen and (max-width:550px)
 {
@@ -460,7 +468,7 @@
 
     #contactame
     {
-        width: 30%;
+        width: 35%;
         height: 7%;
         font-size: 22px;
     }
