@@ -316,6 +316,11 @@
     align-content: center;
     
 }
+#checkValidacionPersonaInput img 
+{
+    width: 20px;
+    height: 20px;   
+}
 #checkInputNombre
 {
     
