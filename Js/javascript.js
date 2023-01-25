@@ -109,7 +109,7 @@ function teclaLevantada (parametro)
    de todos los imputs esten trabajados*/
 var validarForm = false;
 
-document.getElementById('checkValidacionPersonaInput').style.display = 'none';
+
 
 function validarFormulario (evento)
 {
@@ -173,7 +173,7 @@ function validarFormulario (evento)
 /* Evento que escucha el envío final del Formulario*/
 formValidacion.addEventListener('submit', validarFormulario);
 
-
+document.getElementById('checkValidacionPersonaInput').style.display = 'none';
 
 
 /* Importar datos desde la api Random User me */
