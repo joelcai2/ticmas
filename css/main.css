@@ -37,7 +37,7 @@
 }
 #fotoPerfil
 {
-    background-image: url('/Recursos/trabajoOficina.jpg');
+    background-image: url("Recursos/trabajoOficina.jpg");
     background-size: cover;
     
     border-radius: 20px;
