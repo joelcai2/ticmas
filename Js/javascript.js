@@ -125,6 +125,8 @@ function validarFormulario (evento)
          if (nombreInputRegex.test(evento.target.value))
          {
             document.getElementById('checkValidacionPersonaInput').style.display = 'block';
+            document.getElementById('checkInputNombre').style.width = '20px';
+            document.getElementById('checkInputNombre').style.height = '20px';
             document.getElementById('errorNombre').style.display = 'none';
             document.getElementById('errorNombreLength').style.display = 'none';
             document.getElementById('nombrePersona').style.border = '3px solid #06F727';
