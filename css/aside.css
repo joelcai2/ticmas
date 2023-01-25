@@ -207,12 +207,12 @@
     }
     50%
     {
-        background-image: url("Recursos/publicDos.jpg");
+        background-image: url("./Recursos/publicDos.jpg");
        
     }
     75%
     {
-        background-image: url("Recursos/publicTres.jpg");
+        background-image: url('/.Recursos/publicTres.jpg');
         
     }
     100%
