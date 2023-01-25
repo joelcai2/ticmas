@@ -285,33 +285,50 @@
     font-size: 20 px;
 }
 
-
+#cajaNombre
+{
+    width: 100%;
+    
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+#inputNombrePersona
+{
+    width: 92%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#checkValidacionPersonaInput
+{
+    width: 8%;
+    margin-top: 25px;
+    background-color: black;
+    align-content: center;
+    
+}
 #checkInputNombre
 {
-    display: none;
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    margin-left: 360px;
-    margin-bottom: 353px;
-}
-
-@media screen and (max-width:1290px)
-{
-    #checkInputNombre
-    {
-        margin-left: 330px;
-    }
     
-}
-@media screen and (max-width:1190px)
-{
-    #checkInputNombre
-    {
-        margin-left: 270px;
-        
-    }
-    
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-bottom: 1px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-color: #06F727;
+    border-width: 2px;
 }
 
 
@@ -405,82 +422,9 @@
        
 
     }
-    #checkInputNombre
-    {
-        margin-left: 580px;
-        margin-bottom: 396px;
-    }
- 
 
 }
 
-@media screen and (max-width:950px)
-{
-    #checkInputNombre
-    {
-        margin-left: 550px;
-        
-    }
-}
-@media screen and (max-width:900px)
-{
-    #checkInputNombre
-    {
-        margin-left: 515px;
-       
-    }
-}
-
-@media screen and (max-width:850px)
-{
-    #checkInputNombre
-    {
-        margin-left: 480px;
-       
-    }
-}
-
-@media screen and (max-width:800px)
-{
-    #checkInputNombre
-    {
-        margin-left: 450px;
-       
-    }
-}
-@media screen and (max-width:750px)
-{
-    #checkInputNombre
-    {
-        margin-left: 415px;
-       
-    }
-}
-@media screen and (max-width:700px)
-{
-    #checkInputNombre
-    {
-        margin-left: 385px;
-       
-    }
-}
-@media screen and (max-width:650px)
-{
-    #checkInputNombre
-    {
-        margin-left: 350px;
-       
-    }
-}
-
-@media screen and (max-width:600px)
-{
-    #checkInputNombre
-    {
-        margin-left: 325px;
-       
-    }
-}
 
 @media screen and (max-width:550px)
 {
@@ -501,11 +445,7 @@
     {
         font-size: 20px;
     }
-    #checkInputNombre
-    {
-        margin-left: 290px;
-       
-    }
+   
  
 }
 
@@ -534,10 +474,9 @@
         font-size: 19px;
         
     }
-    #checkInputNombre
+    #checkValidacionPersonaInput
     {
-        margin-left: 260px;
-       
+        margin-top: 24px;
     }
 
 }
@@ -560,10 +499,9 @@
     {
         font-size: 18px;
     }
-    #checkInputNombre
+    #checkValidacionPersonaInput
     {
-        margin-left: 220px;
-        margin-bottom: 398px;
+        margin-top: 22px;
     }
 
 }
@@ -593,10 +531,10 @@
     {
         font-size: 16px;
     }
-    #checkInputNombre
+    #checkValidacionPersonaInput
     {
-        margin-left: 190px;
-        margin-bottom: 400px;
+        
+        margin-top: 20px;
     }
 }
 
@@ -634,10 +572,11 @@
     {
         font-size: 15px;
     }
-    #checkInputNombre
+     #checkValidacionPersonaInput img
     {
-        margin-left: 160px;
-        margin-bottom: 402px;
+        width: 18px;
+        height: 18px;
+        
     }
 
 }
@@ -660,10 +599,11 @@
     {
         font-size: 14px;
     }
-    #checkInputNombre
+     #checkValidacionPersonaInput img
     {
-        margin-left: 135px;
-        margin-bottom: 402px;
+        width: 15px;
+        height: 15px;
+        
     }
 
 }
