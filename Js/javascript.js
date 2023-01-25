@@ -127,6 +127,7 @@ function validarFormulario (evento)
             document.getElementById('checkValidacionPersonaInput').style.display = 'block';
             document.getElementById('checkValidacionPersonaInput').style.width = '15px';
             document.getElementById('checkValidacionPersonaInput').style.height = '15px';
+            document.getElementById('checkValidacionPersonaInput').style.zIndex = '5';
             document.getElementById('checkInputNombre').style.display = 'block';
             document.getElementById('checkInputNombre').style.width = '15px';
             document.getElementById('checkInputNombre').style.height = '15px';
